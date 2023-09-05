@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #171717;
+}
+
+/* For World Image */
+
+.world-image{
+    margin-left: 7%;
+    width: 90vw;
+    height: 100vh;
+}
+
+/* For Buttons Parents */
+
+.buttons-parent{
+    border: 3px solid black;
+    width: 8vw;
+    height: 70vh;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+}

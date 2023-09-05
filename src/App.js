@@ -1,9 +1,13 @@
 import React from 'react'
+import World from './components/World/World'
 
 const App = () => {
   return (
-    <div>App</div>
-  )
+<>
+
+<World/>
+
+</>  )
 }
 
 export default App
