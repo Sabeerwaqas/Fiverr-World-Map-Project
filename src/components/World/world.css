@@ -8,7 +8,7 @@ body{
 /* For World Image */
 
 .world-image{
-    margin-left: 7%;
+    margin-left: 9%;
     width: 90vw;
     height: 100vh;
 }
@@ -17,9 +17,26 @@ body{
 
 .buttons-parent{
     border: 3px solid black;
-    width: 8vw;
-    height: 70vh;
+    width: 12vw;
+    height: auto;
     position: absolute;
     top: 15%;
-    left: 1%;
+    /* left: 1%; */
+}
+
+/* For Arabic Button */
+
+.arabic-button{
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* For Arabic Flag */
+
+.arabic-flag{
+    width: 9px;
 }
