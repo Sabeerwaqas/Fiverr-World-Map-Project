@@ -21,7 +21,6 @@ body{
     height: auto;
     position: absolute;
     top: 15%;
-    /* left: 1%; */
 }
 
 /* For Arabic Button */
@@ -39,4 +38,233 @@ body{
 
 .arabic-flag{
     width: 9px;
+}
+
+/* For Chinese Button */
+
+.chinese-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #E71B24;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+}
+
+/* For Dutch Button */
+
+.dutch-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #A91B27;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+
+}
+
+/* For English Button */
+
+
+.english-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #012066;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For French Button */
+
+.french-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #820D13;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For German Button */
+
+.german-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #F7C800;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Habrew Button */
+
+.habrew-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #345ABD;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Hindi Button */
+
+.hindi-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #D26302;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Italian Button */
+
+.italian-button{
+    
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #B5012C;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Malyalam Button */
+
+.malyalam-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #F60F0A;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Polish Button */
+
+.polish-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #F60F0A;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+
+}
+
+
+/* For Portugees Button */
+
+.portugees-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #872D00;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Russian Button */
+
+.russian-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #003194;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Sinhala Button */
+
+.sinhala-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #891F28;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Spanish Button */
+
+.spanish-button{
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #DF720D;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
+}
+
+/* For Ukranian Button */
+
+.ukranian-button{
+
+
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #0158B5;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 5%;
+
+
 }
