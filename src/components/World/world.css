@@ -16,11 +16,16 @@ body{
 /* For Buttons Parents */
 
 .buttons-parent{
-    border: 3px solid black;
     width: 12vw;
     height: auto;
     position: absolute;
     top: 15%;
+}
+
+/* For Flag */
+
+.flag{
+    width: 10px;
 }
 
 /* For Arabic Button */
@@ -34,12 +39,10 @@ body{
     cursor: pointer;
 }
 
-/* For Flag */
-
-.flag{
-    width: 9px;
+.arabic-button:hover{
+    background-color: green;
+    transition: 0.5s;
 }
-
 /* For Chinese Button */
 
 .chinese-button{
@@ -54,6 +57,11 @@ body{
 
 }
 
+.chinese-button:hover{
+    background-color: #E71B24;
+    transition: 0.5s;
+}
+
 /* For Dutch Button */
 
 .dutch-button{
@@ -66,8 +74,11 @@ body{
     cursor: pointer;
     margin-top: 5%;
 
+}
 
-
+.dutch-button:hover{
+    background-color:#A91B27;
+    transition: 0.5s;
 }
 
 /* For English Button */
@@ -86,10 +97,14 @@ body{
 
 }
 
+.english-button:hover{
+    background-color: #012066;
+    transition: 0.5s;
+}
+
 /* For French Button */
 
 .french-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -97,14 +112,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.french-button:hover{
+    background-color: #820D13;
+    transition: 0.5s;
 }
 
 /* For German Button */
 
 .german-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -112,14 +129,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.german-button:hover{
+    background-color: #F7C800;
+    transition: 0.5s;
 }
 
 /* For Habrew Button */
 
 .habrew-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -127,8 +146,11 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.habrew-button:hover{
+    background-color: #345ABD;
+    transition: 0.5s;
 }
 
 /* For Hindi Button */
@@ -146,10 +168,14 @@ body{
 
 }
 
+.hindi-button:hover{
+    background-color: #D26302;
+    transition: 0.5s;
+}
+
 /* For Italian Button */
 
 .italian-button{
-    
     width: 100%;
     color: white;
     background-color: transparent;
@@ -157,14 +183,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.italian-button:hover{
+    background-color: #B5012C;
+    transition: 0.5s;
 }
 
 /* For Malyalam Button */
 
 .malyalam-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -172,14 +200,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.malyalam-button:hover{
+    background-color: #F60F0A;
+    transition: 0.5s;
 }
 
 /* For Polish Button */
 
 .polish-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -187,16 +217,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
-
-
-
 }
 
+.polish-button:hover{
+    background-color: #F60F0A;
+    transition: 0.5s;
+}
 
 /* For Portugees Button */
 
 .portugees-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -204,14 +234,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.portugees-button:hover{
+    background-color: #872D00;
+    transition: 0.5s;
 }
 
 /* For Russian Button */
 
 .russian-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -219,14 +251,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.russian-button:hover{
+    background-color: #003194;
+    transition: 0.5s;
 }
 
 /* For Sinhala Button */
 
 .sinhala-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -234,14 +268,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.sinhala-button:hover{
+    background-color: #891F28;
+    transition: 0.5s;
 }
 
 /* For Spanish Button */
 
 .spanish-button{
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -249,15 +285,16 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.spanish-button:hover{
+background-color: #DF720D;
+transition: 0.5s;
 }
 
 /* For Ukranian Button */
 
 .ukranian-button{
-
-
     width: 100%;
     color: white;
     background-color: transparent;
@@ -265,6 +302,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+}
 
-
+.ukranian-button:hover{
+    background-color: #0158B5;
+    transition: 0.5s;
 }
