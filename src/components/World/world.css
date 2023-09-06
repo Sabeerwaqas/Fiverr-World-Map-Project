@@ -316,8 +316,10 @@ transition: 0.5s;
     height: 100%;
     position: absolute;
     top: 9px;
-    /* bottom: 0px; */
     left: 105px;
     right: 0%;
-    /* background-color: red; */
+}
+
+.visible{
+    visibility: hidden;
 }

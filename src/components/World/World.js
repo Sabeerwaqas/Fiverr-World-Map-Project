@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./world.css";
 import Map from "../../Images/Full Map.png";
 import Arabic from "../../Images/arabicFlag.png";
@@ -17,18 +17,24 @@ import russianFlag from "../../Images/russia.jpeg";
 import sinhalianFlag from "../../Images/sinhala.png";
 import spanishFlag from "../../Images/spanish.png";
 import ukranianFlag from "../../Images/ukrain.jpeg";
-import saudiaMap from "../../Images/Map Arabic.png"
+import saudiaMap from "../../Images/Map Arabic.png";
 
 const World = () => {
+  const [visibility, setVisibility] = useState(false);
+
+  const handleClick = () => {
+    setVisibility(!visibility);
+  };
+
   return (
     <>
       <div>
         <div className="world-image-div">
           <img className="world-image" src={Map} alt="World Map Image" />
-          <img className="saudia-map" src={saudiaMap} alt="China's Map" />
+          <img className={`saudia-map ${visibility ? "visible" : ""}`} src={saudiaMap} alt="China's Map" />
           <div className="buttons-parent">
             <div>
-              <button className="arabic-button">
+              <button onClick={handleClick} className="arabic-button">
                 Arabic
                 <img className="flag" src={Arabic} alt="Arabic's Flag" />
                 العربية
