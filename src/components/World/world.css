@@ -308,3 +308,16 @@ transition: 0.5s;
     background-color: #0158B5;
     transition: 0.5s;
 }
+
+/* For China's Map */
+
+.saudia-map{
+    width: 1260px;
+    height: 100%;
+    position: absolute;
+    top: 9px;
+    /* bottom: 0px; */
+    left: 105px;
+    right: 0%;
+    /* background-color: red; */
+}

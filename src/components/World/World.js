@@ -17,6 +17,7 @@ import russianFlag from "../../Images/russia.jpeg";
 import sinhalianFlag from "../../Images/sinhala.png";
 import spanishFlag from "../../Images/spanish.png";
 import ukranianFlag from "../../Images/ukrain.jpeg";
+import saudiaMap from "../../Images/Map Arabic.png"
 
 const World = () => {
   return (
@@ -24,6 +25,7 @@ const World = () => {
       <div>
         <div className="world-image-div">
           <img className="world-image" src={Map} alt="World Map Image" />
+          <img className="saudia-map" src={saudiaMap} alt="China's Map" />
           <div className="buttons-parent">
             <div>
               <button className="arabic-button">
