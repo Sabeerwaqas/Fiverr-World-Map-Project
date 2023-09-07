@@ -19,7 +19,7 @@ import spanishFlag from "../../Images/spanish.png";
 import ukranianFlag from "../../Images/ukrain.jpeg";
 import saudiaMap from "../../Images/Map Arabic.png";
 import indiaMap from "../../Images/Map Hindi.png";
-import franceMap from "../../Images/Map French.png"
+import franceMap from "../../Images/Map French.png";
 import englishMap from "../../Images/Map English.png";
 import RussianMap from "../../Images/Map Russian.png";
 import Italianmap from "../../Images/Map Italy.png";
@@ -34,11 +34,13 @@ import Portugalmap from "../../Images/Map Portuguese.png";
 import Sinhalamap from "../../Images/Map Sinhala.png";
 
 const World = () => {
-  const [visibility, setVisibility] = useState(false);
-  
+  const [visibility, setVisibility] = useState({});
 
-  const handleClick = () => {
-    setVisibility(!visibility);
+  const handleClick = (mapName) => {
+    setVisibility((prevVisibility) => ({
+      ...prevVisibility,
+      [mapName]: !prevVisibility[mapName],
+    }));
   };
 
   return (
@@ -46,86 +48,97 @@ const World = () => {
       <div>
         <div className="world-image-div">
           <img className="world-image" src={Map} alt="World Map Image" />
-          <img className={`saudia-map ${visibility ? "" : "visible"}`} src={saudiaMap} alt="Saudia's Map" />
-          <img className="india-map" src={indiaMap} alt="India's Map" />
-          <img className="france-map" src={franceMap} alt="France's Map" />
-          <img className="english-map" src={englishMap} alt="England's Map" />
-          <img className="russian-map" src={RussianMap} alt="Russian Map" />
-          <img className="italian-map" src={Italianmap} alt="Italian Map" />
-          <img className="spanish-map" src={Spanishmap} alt="Spanish Map" />
-          <img className="ukranian-map" src={Ukranianmap} alt="Ukranian Map" />
-          <img className="china-map" src={Chinesemap} alt="China Map" />
-          <img className="dutch-map" src={Dutchmap} alt="Dutch Map" />
-          <img className="german-map" src={Germanmap} alt="German's Map" />
-          <img className="habrew-map" src={Habrewmap} alt="Habrew's map" />
-          <img className="poland-map" src={Polandmap} alt="Poland's Map" />
-          <img className="portugal-map" src={Portugalmap} alt="Portugal's Map" />
+          <img
+            className={`saudia-map ${visibility["saudia"] ? "" : "visible"}`}
+            src={saudiaMap}
+            alt="Saudia's Map"
+          />
+          <img className={`india-map ${visibility["india"] ? "" : "visible"}`} src={indiaMap} alt="India's Map" />
+          <img className={`france-map ${visibility["france"] ? "" : "visible"}`} src={franceMap} alt="France's Map" />
+          <img className={`english-map ${visibility["english"] ? "" : "visible"}`} src={englishMap} alt="England's Map" />
+          <img className={`russian-map ${visibility["russia"] ? "" : "visible"}`} src={RussianMap} alt="Russian Map" />
+          <img className={`italian-map ${visibility["italy"] ? "" : "visible"}`} src={Italianmap} alt="Italian Map" />
+          <img className={`spanish-map ${visibility["spain"] ? "" : "visible"}`} src={Spanishmap} alt="Spanish Map" />
+          <img className={`ukranian-map ${visibility["ukrain"] ? "" : "visible"}`} src={Ukranianmap} alt="Ukranian Map" />
+          <img className={`china-map ${visibility["china"] ? "" : "visible"}`} src={Chinesemap} alt="China Map" />
+          <img className={`dutch-map ${visibility["dutch"] ? "" : "visible"}`} src={Dutchmap} alt="Dutch Map" />
+          <img className={`german-map ${visibility["germany"] ? "" : "visible"}`} src={Germanmap} alt="German's Map" />
+          <img className={`habrew-map ${visibility["habrew"] ? "" : "visible"}`} src={Habrewmap} alt="Habrew's map" />
+          <img className={`poland-map ${visibility["poland"] ? "" : "visible"}`} src={Polandmap} alt="Poland's Map" />
+          <img
+            className={`portugal-map ${visibility["portugal"] ? "" : "visible"}`}
+            src={Portugalmap}
+            alt="Portugal's Map"
+          />
           <img className="sinhala-map" src={Sinhalamap} alt="Sinhala's Map" />
           <div className="buttons-parent">
             <div>
-              <button onClick={handleClick} className="arabic-button">
+              <button
+                onClick={() => handleClick("saudia")}
+                className="arabic-button"
+              >
                 Arabic
                 <img className="flag" src={Arabic} alt="Arabic's Flag" />
                 العربية
               </button>
             </div>
             <div>
-              <button className="chinese-button">
+              <button onClick={() => handleClick("china")} className="chinese-button">
                 Chinese
                 <img className="flag" src={ChineseFlag} alt="China's Flag" />
                 中国人
               </button>
             </div>
             <div>
-              <button className=" dutch-button">
+              <button onClick={() => handleClick("dutch")} className=" dutch-button">
                 Dutch
                 <img className="flag" src={dutchFlag} alt="Dutch's Flag" />
                 Dutch
               </button>
             </div>
             <div>
-              <button className="english-button arabic-button">
+              <button onClick={() => handleClick("english")} className="english-button arabic-button">
                 English
                 <img className="flag" src={englishFlag} alt="England's Flag" />
               </button>
             </div>
             <div>
-              <button className="french-button arabic-button">
+              <button onClick={() => handleClick("france")} className="french-button arabic-button">
                 French
                 <img className="flag" src={frenchFlag} alt="France's Flag" />
                 Français
               </button>
             </div>
             <div>
-              <button className="german-button arabic-button">
+              <button onClick={() => handleClick("germany")}  className="german-button arabic-button">
                 German
                 <img className="flag" src={germanFlag} alt="German's Flag" />
                 Deutsch
               </button>
             </div>
             <div>
-              <button className="habrew-button arabic-button">
+              <button onClick={() => handleClick("habrew")}  className="habrew-button arabic-button">
                 Habrew
                 <img className="flag" src={habrewFlag} alt="Habrew's Flag" />
                 العربية
               </button>
             </div>
             <div>
-              <button className="hindi-button">
+              <button onClick={() => handleClick("india")} className="hindi-button">
                 Hindi
                 <img className="flag" src={indianFlag} alt="India's Flag" />
                 हिंदी
               </button>
             </div>
             <div>
-              <button className="italian-button">
+              <button onClick={() => handleClick("italy")}  className="italian-button">
                 Italian
                 <img className="flag" src={italianFlag} alt="Italy's Flag" />
                 Italiano
               </button>
             </div>
             <div>
-              <button className="malyalam-button">
+              <button onClick={() => handleClick("malyalam")}  className="malyalam-button">
                 Malyalam
                 <img
                   className="flag"
@@ -136,14 +149,14 @@ const World = () => {
               </button>
             </div>
             <div>
-              <button className="polish-button arabic-button">
+              <button onClick={() => handleClick("poland")}  className="polish-button arabic-button">
                 Polish
                 <img className="flag" src={polishFlag} alt="Poland's Flag" />
                 POLSKI
               </button>
             </div>
             <div>
-              <button className="portugees-button">
+              <button onClick={() => handleClick("portugal")}  className="portugees-button">
                 Portugees
                 <img
                   className="flag"
@@ -152,12 +165,12 @@ const World = () => {
                 />
                 português
               </button>
-              <button className="russian-button">
+              <button onClick={() => handleClick("russia")}  className="russian-button">
                 Russian
                 <img className="flag" src={russianFlag} alt="Russia's Flag" />
                 Русский
               </button>
-              <button className="sinhala-button">
+              <button onClick={() => handleClick("sinhala")}  className="sinhala-button">
                 Sinhala
                 <img
                   className="flag"
@@ -166,12 +179,12 @@ const World = () => {
                 />
                 සිංහල
               </button>
-              <button className="spanish-button">
+              <button onClick={() => handleClick("spain")}  className="spanish-button">
                 Spanish
                 <img className="flag" src={spanishFlag} alt="Spain's Flag" />
                 Española
               </button>
-              <button className="ukranian-button">
+              <button onClick={() => handleClick("ukrain")}  className="ukranian-button">
                 Ukranian
                 <img className="flag" src={ukranianFlag} alt="Ukrain's Flag" />
                 українська
