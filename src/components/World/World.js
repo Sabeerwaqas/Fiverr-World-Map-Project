@@ -28,6 +28,8 @@ import Ukranianmap from "../../Images/Map Ukrainian.png";
 import Chinesemap from "../../Images/Map Chinese.png";
 import Dutchmap from "../../Images/Map Dutch.png";
 import Germanmap from "../../Images/Map German.png";
+import Habrewmap from "../../Images/Map Hebrew.png";
+import Polandmap from "../../Images/Map Polish.png";
 
 const World = () => {
   const [visibility, setVisibility] = useState(false);
@@ -53,6 +55,8 @@ const World = () => {
           <img className="china-map" src={Chinesemap} alt="China Map" />
           <img className="dutch-map" src={Dutchmap} alt="Dutch Map" />
           <img className="german-map" src={Germanmap} alt="German's Map" />
+          <img className="habrew-map" src={Habrewmap} alt="Habrew's map" />
+          <img className="poland-map" src={Polandmap} alt="Poland's Map" />
           <div className="buttons-parent">
             <div>
               <button onClick={handleClick} className="arabic-button">

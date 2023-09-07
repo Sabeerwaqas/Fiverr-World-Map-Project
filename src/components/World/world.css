@@ -427,6 +427,26 @@ transition: 0.5s;
     top: 1px;
 }
 
+/* For Habrew Map */
+
+.habrew-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
+/* For Poland Map */
+
+.poland-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
 .visible{
     visibility: hidden;
 }
