@@ -447,6 +447,29 @@ transition: 0.5s;
     top: 1px;
 }
 
+/* For Portugal Map */
+
+.portugal-map{
+
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
+/* For Sinhala Map */
+
+.sinhala-map{
+
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+
+}
+
 .visible{
     visibility: hidden;
 }
