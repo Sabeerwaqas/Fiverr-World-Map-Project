@@ -32,6 +32,7 @@ import Habrewmap from "../../Images/Map Hebrew.png";
 import Polandmap from "../../Images/Map Polish.png";
 import Portugalmap from "../../Images/Map Portuguese.png";
 import Sinhalamap from "../../Images/Map Sinhala.png";
+import goButton from "../../Images/Go Button.png" 
 
 const World = () => {
   const [visibility, setVisibility] = useState({});
@@ -48,6 +49,7 @@ const World = () => {
       <div>
         <div className="world-image-div">
           <img className="world-image" src={Map} alt="World Map Image" />
+          <img className="go-button" src={goButton} alt="Go Button" />
           <img
             className={`saudia-map ${visibility["saudia"] ? "" : "visible"}`}
             src={saudiaMap}
@@ -70,7 +72,7 @@ const World = () => {
             src={Portugalmap}
             alt="Portugal's Map"
           />
-          <img className="sinhala-map" src={Sinhalamap} alt="Sinhala's Map" />
+          <img className={`sinhala-map ${visibility["sinhala"] ? "" : "visible"}`} src={Sinhalamap} alt="Sinhala's Map" />
           <div className="buttons-parent">
             <div>
               <button
@@ -97,27 +99,27 @@ const World = () => {
               </button>
             </div>
             <div>
-              <button onClick={() => handleClick("english")} className="english-button arabic-button">
+              <button onClick={() => handleClick("english")} className="english-button">
                 English
                 <img className="flag" src={englishFlag} alt="England's Flag" />
               </button>
             </div>
             <div>
-              <button onClick={() => handleClick("france")} className="french-button arabic-button">
+              <button onClick={() => handleClick("france")} className="french-button">
                 French
                 <img className="flag" src={frenchFlag} alt="France's Flag" />
                 Français
               </button>
             </div>
             <div>
-              <button onClick={() => handleClick("germany")}  className="german-button arabic-button">
+              <button onClick={() => handleClick("germany")}  className="german-button">
                 German
                 <img className="flag" src={germanFlag} alt="German's Flag" />
                 Deutsch
               </button>
             </div>
             <div>
-              <button onClick={() => handleClick("habrew")}  className="habrew-button arabic-button">
+              <button onClick={() => handleClick("habrew")}  className="habrew-button">
                 Habrew
                 <img className="flag" src={habrewFlag} alt="Habrew's Flag" />
                 العربية
@@ -137,7 +139,7 @@ const World = () => {
                 Italiano
               </button>
             </div>
-            <div>
+            {/* <div>
               <button onClick={() => handleClick("malyalam")}  className="malyalam-button">
                 Malyalam
                 <img
@@ -147,9 +149,9 @@ const World = () => {
                 />
                 മലയാളം
               </button>
-            </div>
+            </div> */}
             <div>
-              <button onClick={() => handleClick("poland")}  className="polish-button arabic-button">
+              <button onClick={() => handleClick("poland")}  className="polish-button">
                 Polish
                 <img className="flag" src={polishFlag} alt="Poland's Flag" />
                 POLSKI

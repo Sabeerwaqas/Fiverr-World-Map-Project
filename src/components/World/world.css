@@ -3,6 +3,9 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #171717;
+    background-image: url(../../Images//BG-o.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* For World Image */
@@ -11,6 +14,16 @@ body{
     margin-left: 9%;
     width: 90vw;
     height: 100vh;
+}
+
+/* For Go Button */
+
+.go-button{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 13%;
+    top: 40%;
 }
 
 /* For Buttons Parents */
@@ -36,6 +49,9 @@ body{
     background-color: transparent;
     border: 2px solid green;
     border-radius: 50px;
+    position: absolute;
+    bottom: 200%;
+    left: 100%;
     cursor: pointer;
 }
 
@@ -54,6 +70,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 200%;
+    left: 540%;
 
 }
 
@@ -73,6 +92,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 200%;
+    left: 650%;
 
 }
 
@@ -93,6 +115,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 650%;
 
 
 }
@@ -112,6 +137,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 200%;
+    left: 210%;
 }
 
 .french-button:hover{
@@ -129,6 +157,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 540%;
 }
 
 .german-button:hover{
@@ -146,6 +177,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 430%;
 }
 
 .habrew-button:hover{
@@ -164,6 +198,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 320%;
 
 
 }
@@ -183,6 +220,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 200%;
+    left: 320%;
 }
 
 .italian-button:hover{
@@ -217,6 +257,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 210%;
 }
 
 .polish-button:hover{
@@ -234,6 +277,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 70%;
+    left: 100%;
 }
 
 .portugees-button:hover{
@@ -251,6 +297,10 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    /* bottom: 100%; */
+    left: 320%;
+    top: 50%;
 }
 
 .russian-button:hover{
@@ -268,6 +318,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    position: absolute;
+    bottom: 200%;
+    left: 430%;
 }
 
 .sinhala-button:hover{
@@ -285,6 +338,9 @@ body{
     border-radius: 50px;
     cursor: pointer;
     margin-top: 5%;
+    margin-left: 430%;
+    position: relative;
+    top: 19px;
 }
 
 .spanish-button:hover{
@@ -301,7 +357,8 @@ transition: 0.5s;
     border: 2px solid #0158B5;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 5%;
+    position: absolute;
+    left: 210%;
 }
 
 .ukranian-button:hover{
