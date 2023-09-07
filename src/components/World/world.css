@@ -309,7 +309,7 @@ transition: 0.5s;
     transition: 0.5s;
 }
 
-/* For China's Map */
+/* For Saudia's Map */
 
 .saudia-map{
     width: 1260px;
@@ -318,6 +318,17 @@ transition: 0.5s;
     top: 9px;
     left: 105px;
     right: 0%;
+}
+
+/* For India's Map  */
+
+.india-map{
+    width: 1262px;
+    height: 100%;
+    position: absolute;
+    top: 9.5px;
+    left: 100px;
+    right: 0px;
 }
 
 .visible{

@@ -18,6 +18,7 @@ import sinhalianFlag from "../../Images/sinhala.png";
 import spanishFlag from "../../Images/spanish.png";
 import ukranianFlag from "../../Images/ukrain.jpeg";
 import saudiaMap from "../../Images/Map Arabic.png";
+import indiaMap from "../../Images/Map Hindi.png";
 
 const World = () => {
   const [visibility, setVisibility] = useState(false);
@@ -31,7 +32,8 @@ const World = () => {
       <div>
         <div className="world-image-div">
           <img className="world-image" src={Map} alt="World Map Image" />
-          <img className={`saudia-map ${visibility ? "visible" : ""}`} src={saudiaMap} alt="China's Map" />
+          <img className={`saudia-map ${visibility ? "" : "visible"}`} src={saudiaMap} alt="Saudia's Map" />
+          <img className={`china-map india-map`} src={indiaMap} alt="China's Map" />
           <div className="buttons-parent">
             <div>
               <button onClick={handleClick} className="arabic-button">
