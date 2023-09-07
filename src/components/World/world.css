@@ -331,6 +331,102 @@ transition: 0.5s;
     right: 0px;
 }
 
+/* For France's Map */
+
+.france-map{
+    width: 1272px;
+    height: 102.3%;
+    position: absolute;
+    left: 98px;
+    top: 0px;
+}
+
+/* For English Map */
+
+.english-map{
+
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+    
+}
+
+/* For Russian Map */
+
+.russian-map{
+
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+
+}
+
+/* For Italian Map */
+
+.italian-map{
+
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+
+}
+
+/* For Spanish Map */
+
+.spanish-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
+/* For Ukranian Map */
+
+.ukranian-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
+/* For China Map */
+
+.china-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
+/* For Dutch Map */
+
+.dutch-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px; 
+}
+
+/* For German Map */
+
+.german-map{
+    width: 1228px;
+    height: 102.3%;
+    position: absolute;
+    left: 123px;
+    top: 1px;
+}
+
 .visible{
     visibility: hidden;
 }
